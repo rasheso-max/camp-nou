@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071426">
+    <meta name="description" content="Explore the future of Spotify Camp Nou: its architecture, matchday experience, and storied history.">
+    <title>Spotify Camp Nou — More than a stadium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Spotify Camp Nou home">
+        <span class="brand-mark" aria-hidden="true"><span>FCB</span></span>
+        <span class="brand-name">SPOTIFY <span>CAMP NOU</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#stadium">The stadium</a>
+        <a href="#legends">Legends</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#quiz">Fan quiz</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.4 8.4 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"></path></svg>
+        <span>Light mode</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> BARCELONA, CATALONIA · EST. 1957</p>
+          <h1>Spotify<br><span>Camp Nou</span></h1>
+          <p class="hero-description">More than a stadium. Discover the next chapter of the world's most iconic football ground.</p>
+          <a class="primary-link" href="#stadium">Explore the new Camp Nou <span aria-hidden="true">↗</span></a>
+          <div class="hero-stats" aria-label="Stadium facts">
+            <div><strong>105,000</strong><span>capacity</span></div>
+            <div><strong>1957</strong><span>opened</span></div>
+            <div><strong>1</strong><span>unforgettable home</span></div>
+          </div>
+        </div>
+        <div class="stadium-art" role="img" aria-label="Illustration of a lit football stadium at night">
+          <div class="art-glow"></div>
+          <div class="roof-lights"></div>
+          <div class="stadium-bowl">
+            <div class="bowl-top"></div>
+            <div class="bowl-upper"></div>
+            <div class="bowl-middle"></div>
+            <div class="bowl-lower"></div>
+            <div class="pitch">
+              <span class="pitch-halfway"></span><span class="pitch-circle"></span>
+              <span class="pitch-box pitch-box-left"></span><span class="pitch-box pitch-box-right"></span>
+            </div>
+          </div>
+          <div class="art-caption"><span>41°22'51.1"N</span><span>THE HOME OF BARÇA</span></div>
+          <span class="art-number" aria-hidden="true">1957</span>
+        </div>
+      </section>
+
+      <section class="section stadium-section" id="stadium">
+        <div class="section-heading">
+          <div><p class="eyebrow">A NEW ERA, BUILT ON LEGACY</p><h2>The future has a home.</h2></div>
+          <p>Every detail reimagined. One unmistakable feeling, made for generations to come.</p>
+        </div>
+        <div class="feature-layout">
+          <div class="feature-list" role="tablist" aria-label="Stadium features">
+            <button class="feature-tab is-active" id="tab-roof" type="button" role="tab" aria-selected="true" aria-controls="feature-panel" data-feature="roof">
+              <span class="feature-index">01</span><span class="feature-label">A roof for everyone</span><span class="feature-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="feature-tab" id="tab-vip" type="button" role="tab" aria-selected="false" aria-controls="feature-panel" data-feature="vip">
+              <span class="feature-index">02</span><span class="feature-label">The VIP experience</span><span class="feature-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="feature-tab" id="tab-museum" type="button" role="tab" aria-selected="false" aria-controls="feature-panel" data-feature="museum">
+              <span class="feature-index">03</span><span class="feature-label">More than a museum</span><span class="feature-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="feature-tab" id="tab-pitch" type="button" role="tab" aria-selected="false" aria-controls="feature-panel" data-feature="pitch">
+              <span class="feature-index">04</span><span class="feature-label">A pitch that performs</span><span class="feature-arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <article class="feature-panel" id="feature-panel" role="tabpanel" aria-labelledby="tab-roof" tabindex="0">
+            <div class="feature-art feature-art-roof" aria-hidden="true"><span class="feature-art-orbit"></span><span class="feature-art-core"></span><span class="feature-art-caption">DESIGNED FOR<br>EVERY MOMENT</span></div>
+            <div class="feature-text"><p class="eyebrow" id="feature-kicker">01 / ARCHITECTURE</p><h3 id="feature-title">Under one remarkable roof.</h3><p id="feature-description">A sweeping 360° canopy wraps every seat, bringing the crowd together and sheltering fans from the elements.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section legends-section" id="legends">
+        <div class="section-heading">
+          <div><p class="eyebrow">THE NAMES THAT ECHO THROUGH EVERY STAND</p><h2>Camp Nou Legends</h2></div>
+          <p>Three icons. Countless moments. Open a card to revisit their Barça legacy.</p>
+        </div>
+        <div class="legends-grid">
+          <article class="legend-card">
+            <button class="legend-trigger" type="button" aria-expanded="false" aria-controls="legend-messi-details">
+              <span class="legend-portrait portrait-messi" aria-hidden="true"><span>LM</span><span class="portrait-number">10</span></span>
+              <span class="legend-heading"><span class="legend-era">2004 — 2021 · FORWARD</span><span class="legend-name">Lionel Messi</span></span>
+              <span class="legend-highlight"><strong>672</strong><span>Barça goals</span></span>
+              <span class="legend-cta">Explore his legacy <span aria-hidden="true">+</span></span>
+            </button>
+            <div class="legend-details" id="legend-messi-details" hidden>
+              <p>Barça's record scorer made the impossible feel routine, creating a lifetime of Camp Nou memories.</p>
+              <ul><li>10 La Liga titles with Barça</li><li>4 UEFA Champions League titles</li></ul>
+            </div>
+          </article>
+          <article class="legend-card">
+            <button class="legend-trigger" type="button" aria-expanded="false" aria-controls="legend-cruyff-details">
+              <span class="legend-portrait portrait-cruyff" aria-hidden="true"><span>JC</span><span class="portrait-number">14</span></span>
+              <span class="legend-heading"><span class="legend-era">1973 — 1978 · FORWARD</span><span class="legend-name">Johan Cruyff</span></span>
+              <span class="legend-highlight"><strong>1974</strong><span>League champion</span></span>
+              <span class="legend-cta">Explore his legacy <span aria-hidden="true">+</span></span>
+            </button>
+            <div class="legend-details" id="legend-cruyff-details" hidden>
+              <p>A visionary player who helped Barça end a 14-year wait for the league title and inspired a footballing philosophy.</p>
+              <ul><li>Won La Liga in his first season</li><li>Later led the Dream Team to four straight league titles as coach</li></ul>
+            </div>
+          </article>
+          <article class="legend-card">
+            <button class="legend-trigger" type="button" aria-expanded="false" aria-controls="legend-xavi-details">
+              <span class="legend-portrait portrait-xavi" aria-hidden="true"><span>XH</span><span class="portrait-number">6</span></span>
+              <span class="legend-heading"><span class="legend-era">1998 — 2015 · MIDFIELDER</span><span class="legend-name">Xavi Hernández</span></span>
+              <span class="legend-highlight"><strong>767</strong><span>first-team games</span></span>
+              <span class="legend-cta">Explore his legacy <span aria-hidden="true">+</span></span>
+            </button>
+            <div class="legend-details" id="legend-xavi-details" hidden>
+              <p>The metronome at the heart of Barça's midfield, Xavi set the rhythm for one of the club's greatest eras.</p>
+              <ul><li>Won 8 La Liga titles</li><li>Lifted the Champions League four times</li></ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section ticket-section" id="tickets">
+        <div class="section-heading">
+          <div><p class="eyebrow">YOUR MATCHDAY, YOUR WAY</p><h2>Find your seat.</h2></div>
+          <p>Pick your match, choose your view, and get an instant estimate.</p>
+        </div>
+        <div class="ticket-card">
+          <div class="ticket-form">
+            <label class="field-label" for="match-category">01 <span>Choose your match</span></label>
+            <select id="match-category">
+              <option value="laliga">La Liga</option>
+              <option value="champions">Champions League</option>
+              <option value="clasico">El Clásico</option>
+            </select>
+            <label class="field-label" for="seating-tier">02 <span>Pick your view</span></label>
+            <select id="seating-tier">
+              <option value="vip">VIP</option>
+              <option value="grandstand" selected>Grandstand</option>
+              <option value="goal">Goal Stand</option>
+            </select>
+            <label class="field-label" for="ticket-quantity">03 <span>How many tickets?</span></label>
+            <div class="quantity-control">
+              <button type="button" class="quantity-button" data-quantity-change="-1" aria-label="Remove one ticket">−</button>
+              <input id="ticket-quantity" type="number" min="1" max="10" value="2" inputmode="numeric" aria-label="Number of tickets">
+              <button type="button" class="quantity-button" data-quantity-change="1" aria-label="Add one ticket">+</button>
+            </div>
+          </div>
+          <aside class="ticket-summary" aria-live="polite">
+            <p class="summary-label">YOUR MATCHDAY ESTIMATE</p>
+            <div class="summary-match"><span class="summary-ball" aria-hidden="true">●</span><span id="summary-description">La Liga · Grandstand · 2 tickets</span></div>
+            <div class="summary-total"><span>Estimated total</span><strong id="ticket-total">€250</strong></div>
+            <p class="summary-note">Illustrative prices only. Actual ticket prices vary by fixture and availability.</p>
+            <a class="summary-link" href="#quiz">Got it. More Barça, please <span aria-hidden="true">→</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section quiz-section" id="quiz">
+        <div class="quiz-intro">
+          <p class="eyebrow">PUT YOUR CULER KNOWLEDGE TO THE TEST</p>
+          <h2>Three questions.<br><span>One legendary home.</span></h2>
+          <p>How well do you know the place where history happens?</p>
+          <div class="quiz-score"><span id="quiz-progress">QUESTION 01 / 03</span><strong><span id="quiz-score">0</span><small> pts</small></strong></div>
+        </div>
+        <div class="quiz-card" aria-live="polite">
+          <div class="quiz-card-top"><span id="quiz-question-number">QUESTION 01</span><span class="quiz-star" aria-hidden="true">✳</span></div>
+          <h3 id="quiz-question">When did Camp Nou first open its doors?</h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p class="quiz-feedback" id="quiz-feedback" role="status"></p>
+          <button class="quiz-next" id="quiz-next" type="button" hidden>Next question <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><span>FCB</span></span><span class="brand-name">SPOTIFY <span>CAMP NOU</span></span></a>
+      <p>AN ICONIC HOME. AN ENDLESS STORY.</p>
+      <a class="back-top" href="#home">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
